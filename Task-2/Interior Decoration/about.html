@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script>
+		function checkEmail() {
+			var email = document.getElementById('txtEmail');
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9_\-])+\.)+([a-zA-Z0-9]{2,6})+$/;
+			if(!filter.test(email.value))
+			{
+				alert('Enter a valid Email address');
+				return false;
+			}
+			else{
+				alert('Registered Successfully');
+			}
+		};
+	</script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway: 400,500,600">
+	<style type="text/css">
+		*{margin:1;}
+		body{
+			/*background:url(./images/a.png) no-repeat fixed;*/
+			background-color:black;
+			background-size:cover;
+			height:auto;
+		}
+
+		.header{
+			background-color: rgba(0,0,0,.3);
+			/*background-color: transparent;*/
+			color:black;
+		}.header ul{
+			text-align:right;
+		}.header ul li{
+			list-style:none;
+			display:inline-grid;
+		}.header ul li a{
+			display: block;
+			text-decoration:none;
+			text-transform: uppercase;
+			/*color: #fff;*/
+			color:black;
+			font-size: 15px;
+			font-style: 'Raleway', sans-serif;
+			letter-spacing:1px;
+			font-weight: 600;
+			padding: 10px;
+			transition: all 0.5s ease-in;
+
+		}.header ul li a:hover{
+			background-color:black;
+			border-radius: 50%;
+			color:white;
+		}
+
+		.img{
+			/*background-image: url(./images/y9.jpg);*/
+			/*background-image: url(./images/g3.jpg);*/
+			background-color:lavender;
+			width: 85%;
+			height:auto;
+			margin-left:94px;
+			margin-top: 10px;
+			background-size:fixed;
+		}
+	</style>
+	<title>About</title>
+</head>
+<body>
+	<small>
+	<div class="img">
+		<!-- <p style="font-size:20px;margin-left:30px;margin-bottom: -40px;">
+			<big><I style="color:red;">D</I> <I style="color:blue;"> E</I><I style="color:yellow;"> C</I><I style="color:pink;"> O</I><I style="color:white;"> R</I> <I style="color:aqua;">E</I></big></p> -->
+			<div class="header">
+				<ul>
+					<li><u><a href="Myindex.html">Home</a></u></li>|
+					<li><u><a href="about.html">About</a></u></li>|
+					<li><u><a href="services.html">service</a></u></li>|
+					<li><u><a href="reg.html">Register</a></u></li>|
+					<li><u><a href="contactmain.html">Contact</a></u></li>
+				</ul>
+			</div>
+	</small>
+		<p><h1 style="color:black;text-align:center;">ABOUT US</h1></p>
+		<div><img src="./images/y22.png" width="20%" height="20%" align="center"></div>
+		<!--footer start-->
+		<footer>
+			<div id="footer" style="width:100%;background-color: rgba(0,0,0,.9);color:white;text-align:center;">
+				<hr>@Design and Developed  By - GAURI  TYAGI<hr>
+			</div>
+		</footer>
+		<!--footer close-->
+	</div>
+</body>
+</html>

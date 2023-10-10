@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script>
+		function checkEmail() {
+			var email = document.getElementById('txtEmail');
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9_\-])+\.)+([a-zA-Z0-9]{2,6})+$/;
+			if(!filter.test(email.value))
+			{
+				alert('Enter a valid Email address');
+				return false;
+			}
+			else{
+				alert('Registered Successfully');
+			}
+		};
+	</script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway: 400,500,600">
+	<style type="text/css">
+		*{margin:1;}
+		body{
+			/*background:url(./images/a.png) no-repeat fixed;*/
+			background-color:black;
+			background-size:cover;
+			height:auto;
+		}
+
+		.header{
+			background-color: rgba(0,0,0,.5);
+			/*background-color: transparent;*/
+			color:black;
+		}.header ul{
+			text-align:right;
+		}.header ul li{
+			list-style:none;
+			display:inline-grid;
+		}.header ul li a{
+			display: block;
+			text-decoration:none;
+			text-transform: uppercase;
+			/*color: #fff;*/
+			color:black;
+			font-size: 15px;
+			font-style: 'Raleway', sans-serif;
+			letter-spacing:1px;
+			font-weight: 600;
+			padding: 10px;
+			transition: all 0.5s ease-in;
+
+		}.header ul li a:hover{
+			background-color:black;
+			border-radius: 50%;
+			color:white;
+		}
+
+		.img{
+			background-image: url(./images/y13.jpeg);
+			/*background-image: url(./images/32.png);*/
+			width: 85%;
+			height:100%;
+			margin-left:94px;
+			margin-top: 10px;
+			/*background-size:auto;*/
+		}
+		#ss{
+ 		width: 100%;
+ 		/*background-color:rgba(0,0,0,.8);*/
+ 		border:1px solid transparent;
+ 		/*padding:10px;*/
+ 		/*shape-margin: 3px;*/
+ 		word-wrap:break-word;
+ 		/*text-align:right;*/
+ 		font-family: sans-serif;
+ 		/*background opacity: 0.5;*/
+ 		color:black;
+ 	}
+	</style>
+	<title>Contact Us</title>
+</head>
+<body><small>
+	<div class="img">
+			<div class="header">
+				<ul>
+					<li><u><a href="Myindex.html">Home</a></u></li>|
+					<li><u><a href="about.html">About</a></u></li>|
+					<li><u><a href="services.html">service</a></u></li>|
+					<li><u><a href="reg.html">Register</a></u></li>|
+					<li><u><a href="contact.html">Contact</a></u></li>
+				</ul>
+			</div>
+	</small>
+	<div id="ss" style="text-align: center;">
+	<br><big><big>Contact Details</big></big>
+  <br><hr width="80%"><br>
+  <div style="text-align:center right; margin-right:550px; margin-bottom:200px; text-shadow: 1px 0px 20px pink;" ><br>
+	  	Address :<br>
+	  	<a href="Meerut India"><I>S2S Meerut,<br> Uttar Pradesh, India</I></a><br><br>
+	  		Contact :<br>
+	  	<p style=" color:#368bc1;"href="call">+91-9634093450<br>07310524757</p><br>
+	  		Email :<br>
+	  	<a href="Email">desdel5@gmail.com</a><br><a href="Email">g7524@gmail.com</a><br>
+</div>
+ 	<p class="container-fluid">
+		<form role="form">
+			<div class="form-group" style="margin-left:400px;margin-top: -450px; text-align:left;width:50%;">
+				<label>Email Address : </label>
+				<input style="background-color:#565051;color:white;" type="Email" class="form-control" placeholder="Enter your Email Address">
+			</div>
+			<div class="form-group" style="margin-left:400px;width:50%; text-align: left;">
+				<label>Contact : </label>
+				<input style="background-color:#565051;margin-right:40px;color:white;" type="number" class="form-control" placeholder="Phone_no.">
+			</div>
+			<div class="form-group" style="margin-left:400px;text-align: left; width:50%;">
+				<label>Address : </label>
+				<input style="background-color:#565051;color:white;" type="text" class="form-control" placeholder="street / Near / city / country / pincode">
+			</div>
+			<div class="form-group" style="margin-left:400px;text-align: left; width:50%; height:auto;">
+				<label>Feedback : </label>
+				<input style="background-color:#565051;color:white;" type="text" class="form-control" placeholder="write something">
+			</div>
+			<button style="text-align: left;background-color:#7e3517;color:white;" type="submit" class="btn btn-danger"><b>Submit</b></button>
+		</form>
+	</p>
+</div>
+<!--footer start-->
+<footer>
+<div id="footer" style="width:100%;background-color: rgba(0,0,0,.9);color:white;text-align:center;">
+	<hr>@Design and Developed  By - GAURI  TYAGI<hr>
+	</div>
+</footer></div>
+<!--footer close-->
+</body>
+</html>

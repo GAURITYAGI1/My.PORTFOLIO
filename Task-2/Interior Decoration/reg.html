@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script>
+		function checkEmail() {
+			var email = document.getElementById('txtEmail');
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9_\-])+\.)+([a-zA-Z0-9]{2,6})+$/;
+			if(!filter.test(email.value))
+			{
+				alert('Enter a valid Email address');
+				return false;
+			}
+			else{
+				alert('Registered Successfully');
+			}
+		};
+	</script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway: 400,500,600">
+	<style type="text/css">
+		*{margin:1;}
+body{
+			/*background:url(./images/a.png) no-repeat fixed;*/
+			background-color:black;
+			background-size:cover;
+			height:auto;
+		}
+
+		.header{
+			background-color: rgba(0,0,0,.3);
+			/*background-color: transparent;*/
+			color:black;
+		}.header ul{
+			text-align:right;
+		}.header ul li{
+			list-style:none;
+			display:inline-grid;
+		}.header ul li a{
+			display: block;
+			text-decoration:none;
+			text-transform: uppercase;
+			/*color: #fff;*/
+			color:black;
+			font-size: 15px;
+			font-style: 'Raleway', sans-serif;
+			letter-spacing:1px;
+			font-weight: 600;
+			padding: 10px;
+			transition: all 0.5s ease-in;
+
+		}.header ul li a:hover{
+			background-color:black;
+			border-radius: 50%;
+			color:white;
+		}
+		.img{
+			/*background-image: url(./images/h22.png);*/
+			background-image: url(./images/y17.jpg);
+			width: 85%;
+			height:auto;
+			margin-left:94px;
+			margin-top: 10px;
+			background-size:cover;
+		}
+	</style>
+	<title>Register Here</title>
+</head>
+<body><small>
+	<div class="img">
+		<!-- <p style="font-size:16px;color:white; margin-bottom: -27px;margin-left:30px"><big><I style="color:red;">D</I> <I style="color:green;"> E</I><I style="color:yellow;"> C</I><I style="color:pink;"> O</I><I style="color:white;"> R</I> <I style="color:red;">E</I></big></p> -->
+			<div class="header">
+				<ul>
+					<li><u><a href="Myindex.html">Home</a></u></li>|
+					<li><u><a href="about.html">About</a></u></li>|
+					<li><u><a href="services.html">service</a></u></li>|
+					<li><u><a href="reg.html">Register</a></u></li>|
+					<li><u><a href="contactmain.html">Contact</a></u></li>
+				</ul>
+			</div>
+	</small>
+	<center>
+	<h3 style="color:black; width:50%;border-radius:45%; margin-top: 50px;">-- REGISTER HERE --</h3>
+	<div style="width:30%;color:black;letter-spacing: 2px;">
+	<marquee direction="right()" onmouseover="stop()" onmouseout="start()" scrollamount="4">
+	<font size="2" face="arial" color="red"><b>Please fill the form to Create an Account. *</b></font></marquee></div>
+	<hr width="50%" >
+	<form runat="server">
+	<table cols="2" border=""style="background-color:rgba(0,0,0,.9);color:black;width:40%;">
+		<tr><th style=" text-align: center; color:white;">Full Name:</th>
+		<td><input type="text" id="txtName" placeholder="Enter your Full name" name="aaaaa" required></td></tr>
+		<tr><th style=" text-align: center; color:white;">Enter Email:</th>
+		<td><input type='text' id='txtEmail' placeholder="Enter your Email Address" name="email" required></td></tr>
+		<tr><th style=" color:white;text-align: center;">Password:</th>
+		<td><input type="password" placeholder="Enter Email Password" name="" required></td></tr>
+		<tr><th style=" text-align: center; color:white;">Gender:</th>
+		<td style="color:white;"> Male: <input type="radio" name="gender">
+		Female: <input type="radio" name="gender"> others: <input type="radio" name="gender"></td></tr>
+		<tr><th style=" text-align: center; color:white;">Contact No.:</th>
+		<td><input type="number" placeholder="Enter contact number" name="" required></td></tr>
+		<tr><th style=" text-align: center; color:white;">Address:</th>
+		<td><input type="text" placeholder="Enter full addres" name="" required></td></tr>
+		<!-- <tr><th style=" text-align: center; color:white;">Locality:</th> -->
+		<!-- <td><input type="country" type="drop-down" placeholder="Your Locality" name="" required></td></tr> -->
+		<tr><th style=" text-align: center; color:white;">Select your DOB:</th>
+		<td><input type="date" type="calander" name=""></td></tr>	
+		<tr><th style=" text-align: center; color:white;">Upload Picture:</th>
+		<td style="color:white ;"><input type="file" type=upload name=""></td></tr>
+		<th><td>
+		<button type="submit" class="registerbtn" onclick='javascript:checkEmail();' onclick='validM();' value="submit"style="background-color:skyblue;">Submit</button></td></th>
+	    </table>
+	</form>
+<hr width="50%" color="white" >
+<div class="containeer signin" style="text-align:center; color:black;"><p>Already have an account?<a href="login.html">  Sign in</a><br>By creating an account you agree to our <a href="#">  Terms & Privacy.</a></p></div>
+</center>
+<!--footer start-->
+<footer>
+<div id="footer" style="width:100%;background-color: rgba(0,0,0,.9);color:white;text-align:center;">
+	<hr>@Design and Developed  By - GAURI  TYAGI<hr>
+	</div>
+</footer></div>
+<!--footer close-->
+</body>
+</html>
